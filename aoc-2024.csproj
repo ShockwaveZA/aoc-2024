@@ -7,5 +7,11 @@
         <RootNamespace>aoc_2024</RootNamespace>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
+    
+    <ItemGroup>
+        <None Include="Inputs\**">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
 
 </Project>
