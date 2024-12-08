@@ -23,11 +23,37 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Day" asp-route-day="1">Day</a>
+                    <li class="nav-item dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Days
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="nav-link dropdown-item" asp-area="" asp-controller="Home" asp-action="Day" asp-route-day="1">Day 1</a>
+                            <a class="nav-link dropdown-item disabled" asp-area="" asp-controller="Home" asp-action="Day" asp-route-day="2">Day 2</a>
+                            <a class="nav-link dropdown-item disabled" asp-area="" asp-controller="Home" asp-action="Day" asp-route-day="3">Day 3</a>
+                            <a class="nav-link dropdown-item disabled" asp-area="" asp-controller="Home" asp-action="Day" asp-route-day="4">Day 4</a>
+                            <a class="nav-link dropdown-item disabled" asp-area="" asp-controller="Home" asp-action="Day" asp-route-day="5">Day 5</a>
+                            <a class="nav-link dropdown-item disabled" asp-area="" asp-controller="Home" asp-action="Day" asp-route-day="6">Day 6</a>
+                            <a class="nav-link dropdown-item disabled" asp-area="" asp-controller="Home" asp-action="Day" asp-route-day="7">Day 7</a>
+                            <a class="nav-link dropdown-item disabled" asp-area="" asp-controller="Home" asp-action="Day" asp-route-day="8">Day 8</a>
+                            <a class="nav-link dropdown-item disabled" asp-area="" asp-controller="Home" asp-action="Day" asp-route-day="9">Day 9</a>
+                            <a class="nav-link dropdown-item disabled" asp-area="" asp-controller="Home" asp-action="Day" asp-route-day="10">Day 10</a>
+                            <a class="nav-link dropdown-item disabled" asp-area="" asp-controller="Home" asp-action="Day" asp-route-day="11">Day 11</a>
+                            <a class="nav-link dropdown-item disabled" asp-area="" asp-controller="Home" asp-action="Day" asp-route-day="12">Day 12</a>
+                            <a class="nav-link dropdown-item disabled" asp-area="" asp-controller="Home" asp-action="Day" asp-route-day="13">Day 13</a>
+                            <a class="nav-link dropdown-item disabled" asp-area="" asp-controller="Home" asp-action="Day" asp-route-day="14">Day 14</a>
+                            <a class="nav-link dropdown-item disabled" asp-area="" asp-controller="Home" asp-action="Day" asp-route-day="15">Day 15</a>
+                            <a class="nav-link dropdown-item disabled" asp-area="" asp-controller="Home" asp-action="Day" asp-route-day="16">Day 16</a>
+                            <a class="nav-link dropdown-item disabled" asp-area="" asp-controller="Home" asp-action="Day" asp-route-day="17">Day 17</a>
+                            <a class="nav-link dropdown-item disabled" asp-area="" asp-controller="Home" asp-action="Day" asp-route-day="18">Day 18</a>
+                            <a class="nav-link dropdown-item disabled" asp-area="" asp-controller="Home" asp-action="Day" asp-route-day="19">Day 19</a>
+                            <a class="nav-link dropdown-item disabled" asp-area="" asp-controller="Home" asp-action="Day" asp-route-day="20">Day 20</a>
+                            <a class="nav-link dropdown-item disabled" asp-area="" asp-controller="Home" asp-action="Day" asp-route-day="21">Day 21</a>
+                            <a class="nav-link dropdown-item disabled" asp-area="" asp-controller="Home" asp-action="Day" asp-route-day="22">Day 22</a>
+                            <a class="nav-link dropdown-item disabled" asp-area="" asp-controller="Home" asp-action="Day" asp-route-day="23">Day 23</a>
+                            <a class="nav-link dropdown-item disabled" asp-area="" asp-controller="Home" asp-action="Day" asp-route-day="24">Day 24</a>
+                            <a class="nav-link dropdown-item disabled" asp-area="" asp-controller="Home" asp-action="Day" asp-route-day="25">Day 25</a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -42,7 +68,7 @@
 
 <footer class="border-top footer text-muted">
     <div class="container">
-        &copy; 2024 - aoc_2024 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        &copy; 2024 - aoc_2024
     </div>
 </footer>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
