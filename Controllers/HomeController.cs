@@ -20,18 +20,12 @@ public class HomeController : Controller
 
     public IActionResult Day(int day)
     {
-        ISolution solution = new Day1();
-        switch (day)
+        ISolution solution = day switch
         {
-            case 1:
-                solution = new Day1();
-                break;
-            default:
-                solution = new Day1();
-                break;
-        }
-        
-        
+            2 => new Day2(),
+            _ => new Day1()
+        };
+
         ViewData["Title"] = "Day - " + day;
         ViewData["Day"] = day;
         ViewData["Part1Result"] = solution.ComputePart1(day);
