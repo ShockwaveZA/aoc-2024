@@ -23,6 +23,7 @@ public class HomeController : Controller
         ISolution solution = day switch
         {
             2 => new Day2(),
+            3 => new Day3(),
             _ => new Day1()
         };
 
