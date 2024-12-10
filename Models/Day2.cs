@@ -2,7 +2,7 @@
 
 namespace aoc_2024.Models;
 
-public class Day2: ISolution
+public class Day2(int day) : Solution(day)
 {
     private static string[] ValuesWithoutIndex(string[] values, int index)
     {
@@ -68,9 +68,9 @@ public class Day2: ISolution
         return true;
     }
 
-    public int ComputePart1(int day)
+    public override int ComputePart1()
     {
-        var lines = InputReader.ReadInput(day);
+        var lines = InputReader.ReadInput(Day);
 
         var validCount = 0;
         foreach (var report in lines)
@@ -85,9 +85,9 @@ public class Day2: ISolution
         return validCount;
     }
 
-    public int ComputePart2(int day)
+    public override int ComputePart2()
     {
-        var lines = InputReader.ReadInput(day);
+        var lines = InputReader.ReadInput(Day);
 
         var validCount = 0;
         foreach (var report in lines)

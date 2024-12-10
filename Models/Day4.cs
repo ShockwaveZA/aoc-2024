@@ -2,7 +2,7 @@
 
 namespace aoc_2024.Models;
 
-public class Day4: ISolution
+public class Day4(int day) : Solution(day)
 {
 
     private static bool CollectXmas(string[] lines, int y, int x, int modY, int modX)
@@ -40,9 +40,9 @@ public class Day4: ISolution
         return count;
     }
     
-    public int ComputePart1(int day)
+    public override int ComputePart1()
     {
-        var lines = InputReader.ReadInput(day);
+        var lines = InputReader.ReadInput(Day);
 
         var count = 0;
         for (var y = 0; y < lines.Length; y++)
@@ -72,9 +72,9 @@ public class Day4: ISolution
         }
     }
 
-    public int ComputePart2(int day)
+    public override int ComputePart2()
     {
-        var lines = InputReader.ReadInput(day);
+        var lines = InputReader.ReadInput(Day);
 
         var count = 0;
         for (var y = 0; y < lines.Length; y++)

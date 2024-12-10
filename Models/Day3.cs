@@ -3,12 +3,12 @@ using aoc_2024.Util;
 
 namespace aoc_2024.Models;
 
-public partial class Day3: ISolution
+public partial class Day3(int day) : Solution(day)
 {
 
-    public int ComputePart1(int day)
+    public override int ComputePart1()
     {
-        var memory = string.Join("\n", InputReader.ReadInput(day));
+        var memory = string.Join("\n", InputReader.ReadInput(Day));
 
         var instructions = InstructionRegex().Matches(memory);
         var total = 0;
@@ -30,7 +30,7 @@ public partial class Day3: ISolution
         return total;
     }
 
-    public int ComputePart2(int day)
+    public override int ComputePart2()
     {
         var memory = string.Join("\n", InputReader.ReadInput(day));
         
